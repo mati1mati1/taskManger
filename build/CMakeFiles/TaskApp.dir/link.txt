@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/TaskApp.dir/main.cpp.o CMakeFiles/TaskApp.dir/TaskManager.cpp.o CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o -o TaskApp
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/TaskApp.dir/src/main.cpp.o CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o -o TaskApp

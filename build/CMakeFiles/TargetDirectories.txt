@@ -1,4 +1,5 @@
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/TaskApp.dir
+/Users/matanamichy/development/TaskManager/build/CMakeFiles/taskctl.dir
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/GTestTaskTests.dir
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/edit_cache.dir
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/rebuild_cache.dir
@@ -6,12 +7,12 @@
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/install.dir
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/install/local.dir
 /Users/matanamichy/development/TaskManager/build/CMakeFiles/install/strip.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/edit_cache.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/rebuild_cache.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/list_install_components.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/install.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/install/local.dir
-/Users/matanamichy/development/TaskManager/build/_deps/json-build/CMakeFiles/install/strip.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/list_install_components.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/install.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/install/local.dir
+/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build/CMakeFiles/install/strip.dir
 /Users/matanamichy/development/TaskManager/build/_deps/googletest-build/CMakeFiles/edit_cache.dir
 /Users/matanamichy/development/TaskManager/build/_deps/googletest-build/CMakeFiles/rebuild_cache.dir
 /Users/matanamichy/development/TaskManager/build/_deps/googletest-build/CMakeFiles/list_install_components.dir

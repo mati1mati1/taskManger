@@ -8,10 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp" "CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o.d"
-  "/Users/matanamichy/development/TaskManager/TaskManager.cpp" "CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o.d"
-  "/Users/matanamichy/development/TaskManager/test/gtest_Task.cpp" "CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o.d"
-  "/Users/matanamichy/development/TaskManager/test/gtest_TaskManager.cpp" "CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o.d"
+  "/Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp" "CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o.d"
+  "/Users/matanamichy/development/TaskManager/src/TaskManager.cpp" "CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o.d"
+  "/Users/matanamichy/development/TaskManager/test/JsonTaskStorage.cpp" "CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o.d"
+  "/Users/matanamichy/development/TaskManager/test/Task.cpp" "CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o.d"
+  "/Users/matanamichy/development/TaskManager/test/TaskManager.cpp" "CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o" "gcc" "CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

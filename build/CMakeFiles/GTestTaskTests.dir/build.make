@@ -72,82 +72,98 @@ include CMakeFiles/GTestTaskTests.dir/flags.make
 CMakeFiles/GTestTaskTests.dir/codegen:
 .PHONY : CMakeFiles/GTestTaskTests.dir/codegen
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
-CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/test/gtest_TaskManager.cpp
-CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o -MF CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/test/gtest_TaskManager.cpp
+CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
+CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/test/TaskManager.cpp
+CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o -MF CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/test/TaskManager.cpp
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/test/gtest_TaskManager.cpp > CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.i
+CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/test/TaskManager.cpp > CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.i
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/test/gtest_TaskManager.cpp -o CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.s
+CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/test/TaskManager.cpp -o CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.s
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
-CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o: /Users/matanamichy/development/TaskManager/test/gtest_Task.cpp
-CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o -MF CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o -c /Users/matanamichy/development/TaskManager/test/gtest_Task.cpp
+CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
+CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o: /Users/matanamichy/development/TaskManager/test/JsonTaskStorage.cpp
+CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o -MF CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o -c /Users/matanamichy/development/TaskManager/test/JsonTaskStorage.cpp
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/test/gtest_Task.cpp > CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.i
+CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/test/JsonTaskStorage.cpp > CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.i
 
-CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/test/gtest_Task.cpp -o CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.s
+CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/test/JsonTaskStorage.cpp -o CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.s
 
-CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
-CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/TaskManager.cpp
-CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o -MF CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/TaskManager.cpp
+CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
+CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o: /Users/matanamichy/development/TaskManager/test/Task.cpp
+CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o -MF CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o -c /Users/matanamichy/development/TaskManager/test/Task.cpp
 
-CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/TaskManager.cpp > CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.i
+CMakeFiles/GTestTaskTests.dir/test/Task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/test/Task.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/test/Task.cpp > CMakeFiles/GTestTaskTests.dir/test/Task.cpp.i
 
-CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/TaskManager.cpp -o CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.s
+CMakeFiles/GTestTaskTests.dir/test/Task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/test/Task.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/test/Task.cpp -o CMakeFiles/GTestTaskTests.dir/test/Task.cpp.s
 
-CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
-CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o: /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp
-CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o -MF CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o -c /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp
+CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
+CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/src/TaskManager.cpp
+CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o -MF CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/src/TaskManager.cpp
 
-CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp > CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.i
+CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/TaskManager.cpp > CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.i
 
-CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp -o CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.s
+CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/TaskManager.cpp -o CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.s
+
+CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/flags.make
+CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o: /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp
+CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o: CMakeFiles/GTestTaskTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o -MF CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o.d -o CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o -c /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp
+
+CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp > CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.i
+
+CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp -o CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.s
 
 # Object files for target GTestTaskTests
 GTestTaskTests_OBJECTS = \
-"CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o" \
-"CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o" \
-"CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o" \
-"CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o"
+"CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o" \
+"CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o" \
+"CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o" \
+"CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o" \
+"CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o"
 
 # External object files for target GTestTaskTests
 GTestTaskTests_EXTERNAL_OBJECTS =
 
-GTestTaskTests: CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o
-GTestTaskTests: CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o
-GTestTaskTests: CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o
-GTestTaskTests: CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o
+GTestTaskTests: CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o
+GTestTaskTests: CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o
+GTestTaskTests: CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o
+GTestTaskTests: CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o
+GTestTaskTests: CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o
 GTestTaskTests: CMakeFiles/GTestTaskTests.dir/build.make
 GTestTaskTests: lib/libgtest.a
 GTestTaskTests: lib/libgtest_main.a
 GTestTaskTests: lib/libgtest.a
 GTestTaskTests: CMakeFiles/GTestTaskTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GTestTaskTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GTestTaskTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GTestTaskTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

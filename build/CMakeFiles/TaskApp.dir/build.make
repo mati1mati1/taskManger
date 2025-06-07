@@ -72,63 +72,79 @@ include CMakeFiles/TaskApp.dir/flags.make
 CMakeFiles/TaskApp.dir/codegen:
 .PHONY : CMakeFiles/TaskApp.dir/codegen
 
-CMakeFiles/TaskApp.dir/main.cpp.o: CMakeFiles/TaskApp.dir/flags.make
-CMakeFiles/TaskApp.dir/main.cpp.o: /Users/matanamichy/development/TaskManager/main.cpp
-CMakeFiles/TaskApp.dir/main.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TaskApp.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/main.cpp.o -MF CMakeFiles/TaskApp.dir/main.cpp.o.d -o CMakeFiles/TaskApp.dir/main.cpp.o -c /Users/matanamichy/development/TaskManager/main.cpp
+CMakeFiles/TaskApp.dir/src/main.cpp.o: CMakeFiles/TaskApp.dir/flags.make
+CMakeFiles/TaskApp.dir/src/main.cpp.o: /Users/matanamichy/development/TaskManager/src/main.cpp
+CMakeFiles/TaskApp.dir/src/main.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TaskApp.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/src/main.cpp.o -MF CMakeFiles/TaskApp.dir/src/main.cpp.o.d -o CMakeFiles/TaskApp.dir/src/main.cpp.o -c /Users/matanamichy/development/TaskManager/src/main.cpp
 
-CMakeFiles/TaskApp.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/main.cpp > CMakeFiles/TaskApp.dir/main.cpp.i
+CMakeFiles/TaskApp.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/main.cpp > CMakeFiles/TaskApp.dir/src/main.cpp.i
 
-CMakeFiles/TaskApp.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/main.cpp -o CMakeFiles/TaskApp.dir/main.cpp.s
+CMakeFiles/TaskApp.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/main.cpp -o CMakeFiles/TaskApp.dir/src/main.cpp.s
 
-CMakeFiles/TaskApp.dir/TaskManager.cpp.o: CMakeFiles/TaskApp.dir/flags.make
-CMakeFiles/TaskApp.dir/TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/TaskManager.cpp
-CMakeFiles/TaskApp.dir/TaskManager.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TaskApp.dir/TaskManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/TaskManager.cpp.o -MF CMakeFiles/TaskApp.dir/TaskManager.cpp.o.d -o CMakeFiles/TaskApp.dir/TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/TaskManager.cpp
+CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o: CMakeFiles/TaskApp.dir/flags.make
+CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o: /Users/matanamichy/development/TaskManager/src/TaskServer.cpp
+CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o -MF CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o.d -o CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o -c /Users/matanamichy/development/TaskManager/src/TaskServer.cpp
 
-CMakeFiles/TaskApp.dir/TaskManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/TaskManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/TaskManager.cpp > CMakeFiles/TaskApp.dir/TaskManager.cpp.i
+CMakeFiles/TaskApp.dir/src/TaskServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/src/TaskServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/TaskServer.cpp > CMakeFiles/TaskApp.dir/src/TaskServer.cpp.i
 
-CMakeFiles/TaskApp.dir/TaskManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/TaskManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/TaskManager.cpp -o CMakeFiles/TaskApp.dir/TaskManager.cpp.s
+CMakeFiles/TaskApp.dir/src/TaskServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/src/TaskServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/TaskServer.cpp -o CMakeFiles/TaskApp.dir/src/TaskServer.cpp.s
 
-CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o: CMakeFiles/TaskApp.dir/flags.make
-CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o: /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp
-CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o -MF CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o.d -o CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o -c /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp
+CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o: CMakeFiles/TaskApp.dir/flags.make
+CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o: /Users/matanamichy/development/TaskManager/src/TaskManager.cpp
+CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o -MF CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o.d -o CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o -c /Users/matanamichy/development/TaskManager/src/TaskManager.cpp
 
-CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp > CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.i
+CMakeFiles/TaskApp.dir/src/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/src/TaskManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/TaskManager.cpp > CMakeFiles/TaskApp.dir/src/TaskManager.cpp.i
 
-CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/JsonTaskStorage.cpp -o CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.s
+CMakeFiles/TaskApp.dir/src/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/src/TaskManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/TaskManager.cpp -o CMakeFiles/TaskApp.dir/src/TaskManager.cpp.s
+
+CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o: CMakeFiles/TaskApp.dir/flags.make
+CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o: /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp
+CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o: CMakeFiles/TaskApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o -MF CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o.d -o CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o -c /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp
+
+CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp > CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.i
+
+CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/TaskManager/src/JsonTaskStorage.cpp -o CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.s
 
 # Object files for target TaskApp
 TaskApp_OBJECTS = \
-"CMakeFiles/TaskApp.dir/main.cpp.o" \
-"CMakeFiles/TaskApp.dir/TaskManager.cpp.o" \
-"CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o"
+"CMakeFiles/TaskApp.dir/src/main.cpp.o" \
+"CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o" \
+"CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o" \
+"CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o"
 
 # External object files for target TaskApp
 TaskApp_EXTERNAL_OBJECTS =
 
-TaskApp: CMakeFiles/TaskApp.dir/main.cpp.o
-TaskApp: CMakeFiles/TaskApp.dir/TaskManager.cpp.o
-TaskApp: CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o
+TaskApp: CMakeFiles/TaskApp.dir/src/main.cpp.o
+TaskApp: CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o
+TaskApp: CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o
+TaskApp: CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o
 TaskApp: CMakeFiles/TaskApp.dir/build.make
 TaskApp: CMakeFiles/TaskApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TaskApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/TaskManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable TaskApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TaskApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -175,6 +175,19 @@ TaskApp/fast:
 .PHONY : TaskApp/fast
 
 #=============================================================================
+# Target rules for targets named taskctl
+
+# Build rule for target.
+taskctl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 taskctl
+.PHONY : taskctl
+
+# fast build rule for target.
+taskctl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/build
+.PHONY : taskctl/fast
+
+#=============================================================================
 # Target rules for targets named GTestTaskTests
 
 # Build rule for target.
@@ -239,131 +252,227 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-JsonTaskStorage.o: JsonTaskStorage.cpp.o
-.PHONY : JsonTaskStorage.o
+src/JsonTaskStorage.o: src/JsonTaskStorage.cpp.o
+.PHONY : src/JsonTaskStorage.o
 
 # target to build an object file
-JsonTaskStorage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o
-.PHONY : JsonTaskStorage.cpp.o
+src/JsonTaskStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.o
+.PHONY : src/JsonTaskStorage.cpp.o
 
-JsonTaskStorage.i: JsonTaskStorage.cpp.i
-.PHONY : JsonTaskStorage.i
+src/JsonTaskStorage.i: src/JsonTaskStorage.cpp.i
+.PHONY : src/JsonTaskStorage.i
 
 # target to preprocess a source file
-JsonTaskStorage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.i
-.PHONY : JsonTaskStorage.cpp.i
+src/JsonTaskStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.i
+.PHONY : src/JsonTaskStorage.cpp.i
 
-JsonTaskStorage.s: JsonTaskStorage.cpp.s
-.PHONY : JsonTaskStorage.s
+src/JsonTaskStorage.s: src/JsonTaskStorage.cpp.s
+.PHONY : src/JsonTaskStorage.s
 
 # target to generate assembly for a file
-JsonTaskStorage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/JsonTaskStorage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.s
-.PHONY : JsonTaskStorage.cpp.s
+src/JsonTaskStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/JsonTaskStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/JsonTaskStorage.cpp.s
+.PHONY : src/JsonTaskStorage.cpp.s
 
-TaskManager.o: TaskManager.cpp.o
-.PHONY : TaskManager.o
+src/TaskClient.o: src/TaskClient.cpp.o
+.PHONY : src/TaskClient.o
 
 # target to build an object file
-TaskManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/TaskManager.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o
-.PHONY : TaskManager.cpp.o
+src/TaskClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/TaskClient.cpp.o
+.PHONY : src/TaskClient.cpp.o
 
-TaskManager.i: TaskManager.cpp.i
-.PHONY : TaskManager.i
+src/TaskClient.i: src/TaskClient.cpp.i
+.PHONY : src/TaskClient.i
 
 # target to preprocess a source file
-TaskManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/TaskManager.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.i
-.PHONY : TaskManager.cpp.i
+src/TaskClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/TaskClient.cpp.i
+.PHONY : src/TaskClient.cpp.i
 
-TaskManager.s: TaskManager.cpp.s
-.PHONY : TaskManager.s
+src/TaskClient.s: src/TaskClient.cpp.s
+.PHONY : src/TaskClient.s
 
 # target to generate assembly for a file
-TaskManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/TaskManager.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.s
-.PHONY : TaskManager.cpp.s
+src/TaskClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/TaskClient.cpp.s
+.PHONY : src/TaskClient.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/TaskManager.o: src/TaskManager.cpp.o
+.PHONY : src/TaskManager.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/TaskManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.o
+.PHONY : src/TaskManager.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/TaskManager.i: src/TaskManager.cpp.i
+.PHONY : src/TaskManager.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/TaskManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.i
+.PHONY : src/TaskManager.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/TaskManager.s: src/TaskManager.cpp.s
+.PHONY : src/TaskManager.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/TaskManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/src/TaskManager.cpp.s
+.PHONY : src/TaskManager.cpp.s
 
-test/gtest_Task.o: test/gtest_Task.cpp.o
-.PHONY : test/gtest_Task.o
+src/TaskServer.o: src/TaskServer.cpp.o
+.PHONY : src/TaskServer.o
 
 # target to build an object file
-test/gtest_Task.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o
-.PHONY : test/gtest_Task.cpp.o
+src/TaskServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskServer.cpp.o
+.PHONY : src/TaskServer.cpp.o
 
-test/gtest_Task.i: test/gtest_Task.cpp.i
-.PHONY : test/gtest_Task.i
+src/TaskServer.i: src/TaskServer.cpp.i
+.PHONY : src/TaskServer.i
 
 # target to preprocess a source file
-test/gtest_Task.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.i
-.PHONY : test/gtest_Task.cpp.i
+src/TaskServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskServer.cpp.i
+.PHONY : src/TaskServer.cpp.i
 
-test/gtest_Task.s: test/gtest_Task.cpp.s
-.PHONY : test/gtest_Task.s
+src/TaskServer.s: src/TaskServer.cpp.s
+.PHONY : src/TaskServer.s
 
 # target to generate assembly for a file
-test/gtest_Task.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.s
-.PHONY : test/gtest_Task.cpp.s
+src/TaskServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/TaskServer.cpp.s
+.PHONY : src/TaskServer.cpp.s
 
-test/gtest_TaskManager.o: test/gtest_TaskManager.cpp.o
-.PHONY : test/gtest_TaskManager.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-test/gtest_TaskManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o
-.PHONY : test/gtest_TaskManager.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-test/gtest_TaskManager.i: test/gtest_TaskManager.cpp.i
-.PHONY : test/gtest_TaskManager.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-test/gtest_TaskManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.i
-.PHONY : test/gtest_TaskManager.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-test/gtest_TaskManager.s: test/gtest_TaskManager.cpp.s
-.PHONY : test/gtest_TaskManager.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-test/gtest_TaskManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.s
-.PHONY : test/gtest_TaskManager.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TaskApp.dir/build.make CMakeFiles/TaskApp.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/taskctl.o: src/taskctl.cpp.o
+.PHONY : src/taskctl.o
+
+# target to build an object file
+src/taskctl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/taskctl.cpp.o
+.PHONY : src/taskctl.cpp.o
+
+src/taskctl.i: src/taskctl.cpp.i
+.PHONY : src/taskctl.i
+
+# target to preprocess a source file
+src/taskctl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/taskctl.cpp.i
+.PHONY : src/taskctl.cpp.i
+
+src/taskctl.s: src/taskctl.cpp.s
+.PHONY : src/taskctl.s
+
+# target to generate assembly for a file
+src/taskctl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskctl.dir/build.make CMakeFiles/taskctl.dir/src/taskctl.cpp.s
+.PHONY : src/taskctl.cpp.s
+
+test/JsonTaskStorage.o: test/JsonTaskStorage.cpp.o
+.PHONY : test/JsonTaskStorage.o
+
+# target to build an object file
+test/JsonTaskStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.o
+.PHONY : test/JsonTaskStorage.cpp.o
+
+test/JsonTaskStorage.i: test/JsonTaskStorage.cpp.i
+.PHONY : test/JsonTaskStorage.i
+
+# target to preprocess a source file
+test/JsonTaskStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.i
+.PHONY : test/JsonTaskStorage.cpp.i
+
+test/JsonTaskStorage.s: test/JsonTaskStorage.cpp.s
+.PHONY : test/JsonTaskStorage.s
+
+# target to generate assembly for a file
+test/JsonTaskStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/JsonTaskStorage.cpp.s
+.PHONY : test/JsonTaskStorage.cpp.s
+
+test/Task.o: test/Task.cpp.o
+.PHONY : test/Task.o
+
+# target to build an object file
+test/Task.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/Task.cpp.o
+.PHONY : test/Task.cpp.o
+
+test/Task.i: test/Task.cpp.i
+.PHONY : test/Task.i
+
+# target to preprocess a source file
+test/Task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/Task.cpp.i
+.PHONY : test/Task.cpp.i
+
+test/Task.s: test/Task.cpp.s
+.PHONY : test/Task.s
+
+# target to generate assembly for a file
+test/Task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/Task.cpp.s
+.PHONY : test/Task.cpp.s
+
+test/TaskManager.o: test/TaskManager.cpp.o
+.PHONY : test/TaskManager.o
+
+# target to build an object file
+test/TaskManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.o
+.PHONY : test/TaskManager.cpp.o
+
+test/TaskManager.i: test/TaskManager.cpp.i
+.PHONY : test/TaskManager.i
+
+# target to preprocess a source file
+test/TaskManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.i
+.PHONY : test/TaskManager.cpp.i
+
+test/TaskManager.s: test/TaskManager.cpp.s
+.PHONY : test/TaskManager.s
+
+# target to generate assembly for a file
+test/TaskManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GTestTaskTests.dir/build.make CMakeFiles/GTestTaskTests.dir/test/TaskManager.cpp.s
+.PHONY : test/TaskManager.cpp.s
 
 # Help Target
 help:
@@ -383,21 +492,34 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... JsonTaskStorage.o"
-	@echo "... JsonTaskStorage.i"
-	@echo "... JsonTaskStorage.s"
-	@echo "... TaskManager.o"
-	@echo "... TaskManager.i"
-	@echo "... TaskManager.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... test/gtest_Task.o"
-	@echo "... test/gtest_Task.i"
-	@echo "... test/gtest_Task.s"
-	@echo "... test/gtest_TaskManager.o"
-	@echo "... test/gtest_TaskManager.i"
-	@echo "... test/gtest_TaskManager.s"
+	@echo "... taskctl"
+	@echo "... src/JsonTaskStorage.o"
+	@echo "... src/JsonTaskStorage.i"
+	@echo "... src/JsonTaskStorage.s"
+	@echo "... src/TaskClient.o"
+	@echo "... src/TaskClient.i"
+	@echo "... src/TaskClient.s"
+	@echo "... src/TaskManager.o"
+	@echo "... src/TaskManager.i"
+	@echo "... src/TaskManager.s"
+	@echo "... src/TaskServer.o"
+	@echo "... src/TaskServer.i"
+	@echo "... src/TaskServer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/taskctl.o"
+	@echo "... src/taskctl.i"
+	@echo "... src/taskctl.s"
+	@echo "... test/JsonTaskStorage.o"
+	@echo "... test/JsonTaskStorage.i"
+	@echo "... test/JsonTaskStorage.s"
+	@echo "... test/Task.o"
+	@echo "... test/Task.i"
+	@echo "... test/Task.s"
+	@echo "... test/TaskManager.o"
+	@echo "... test/TaskManager.i"
+	@echo "... test/TaskManager.s"
 .PHONY : help
 
 

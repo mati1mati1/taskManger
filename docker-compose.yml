@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  taskserver:
+    build: .
+    container_name: taskserver
+    restart: always
+    ports:
+      - "5050:5050"

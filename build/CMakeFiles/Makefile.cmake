@@ -20,10 +20,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/googletest-src/googletest/cmake/gtest.pc.in"
   "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
   "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
-  "_deps/json-src/CMakeLists.txt"
-  "_deps/json-src/cmake/config.cmake.in"
-  "_deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in"
-  "_deps/json-src/cmake/pkg-config.pc.in"
+  "_deps/nlohmann_json-src/CMakeLists.txt"
+  "_deps/nlohmann_json-src/cmake/config.cmake.in"
+  "_deps/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in"
+  "_deps/nlohmann_json-src/cmake/pkg-config.pc.in"
   "/opt/homebrew/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -83,13 +83,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "_deps/json-subbuild/CMakeLists.txt"
+  "_deps/nlohmann_json-subbuild/CMakeLists.txt"
   "_deps/googletest-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "_deps/json-build/nlohmann_json.pc"
-  "_deps/json-build/nlohmann_jsonConfigVersion.cmake"
-  "_deps/json-build/nlohmann_jsonConfig.cmake"
-  "_deps/json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/nlohmann_json-build/nlohmann_json.pc"
+  "_deps/nlohmann_json-build/nlohmann_jsonConfigVersion.cmake"
+  "_deps/nlohmann_json-build/nlohmann_jsonConfig.cmake"
+  "_deps/nlohmann_json-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/googletest/generated/gmock.pc"
   "_deps/googletest-build/googletest/generated/gmock_main.pc"
@@ -104,6 +104,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TaskApp.dir/DependInfo.cmake"
+  "CMakeFiles/taskctl.dir/DependInfo.cmake"
   "CMakeFiles/GTestTaskTests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

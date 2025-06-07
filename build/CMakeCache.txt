@@ -294,8 +294,8 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_SOURCE_DIR_GOOGLETEST:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for json
-FETCHCONTENT_SOURCE_DIR_JSON:PATH=
+// for nlohmann_json
+FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
@@ -303,8 +303,8 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of googletest
 FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of json
-FETCHCONTENT_UPDATES_DISCONNECTED_JSON:BOOL=OFF
+//Enables UPDATE_DISCONNECTED behavior just for population of nlohmann_json
+FETCHCONTENT_UPDATES_DISCONNECTED_NLOHMANN_JSON:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
@@ -415,13 +415,13 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-nlohmann_json_BINARY_DIR:STATIC=/Users/matanamichy/development/TaskManager/build/_deps/json-build
+nlohmann_json_BINARY_DIR:STATIC=/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-build
 
 //Value Computed by CMake
 nlohmann_json_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-nlohmann_json_SOURCE_DIR:STATIC=/Users/matanamichy/development/TaskManager/build/_deps/json-src
+nlohmann_json_SOURCE_DIR:STATIC=/Users/matanamichy/development/TaskManager/build/_deps/nlohmann_json-src
 
 
 ########################
