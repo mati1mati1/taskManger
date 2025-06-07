@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/GTestTaskTests.dir/test/gtest_TaskManager.cpp.o CMakeFiles/GTestTaskTests.dir/test/gtest_Task.cpp.o CMakeFiles/GTestTaskTests.dir/TaskManager.cpp.o CMakeFiles/GTestTaskTests.dir/JsonTaskStorage.cpp.o -o GTestTaskTests  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a

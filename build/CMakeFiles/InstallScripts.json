@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/matanamichy/development/TaskManager/build/cmake_install.cmake",
+		"/Users/matanamichy/development/TaskManager/build/_deps/json-build/cmake_install.cmake",
+		"/Users/matanamichy/development/TaskManager/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/matanamichy/development/TaskManager/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/matanamichy/development/TaskManager/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
