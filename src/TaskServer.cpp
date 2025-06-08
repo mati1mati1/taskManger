@@ -82,14 +82,27 @@ void TaskServer::run() {
                 std::string desc = request.value("description", "");
                 int prio = request.value("priority", 0);
                 int exec = request.value("execution_time", 0);
-                int id = manager.getAllTasks().size() + 1;
 
-                Task new_task{id, prio, exec, desc, false};
-                manager.addTask(new_task);
+                Task new_task{0, prio, exec, desc, false};
+                int id = manager.addTask(new_task);
                 response = {
                     {"status", "ok"},
                     {"message", "Task added"},
                     {"task_id", id}
+                };
+            } else if (cmd == "filter") {
+                std::string filter_type = request.value("type", "");
+                nlohmann::json filter_value = request.value("value", nullptr);
+                std::string desc = request.value("description", "");
+                int prio = request.value("priority", 0);
+                int exec = request.value("execution_time", 0);
+                int id = request.value("task_id", 0);
+                bool is_completed = request.value("is_completed", false);
+                Task filter_task{id, prio, exec, desc, is_completed};
+                std::vector<Task> filtered_tasks = manager.filterTasks(filter_task);
+                response = {
+                    {"status", "ok"},
+                    {"tasks", filtered_tasks}
                 };
             } else if (cmd == "done") {
                 int id = request.value("task_id", -1);

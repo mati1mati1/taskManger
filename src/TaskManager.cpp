@@ -103,13 +103,22 @@ std::vector<Task> TaskManager::getTasksByDescription(const std::string &descript
     }
     return result;
 }
-std::vector<Task> TaskManager::getTasksById(int taskId){
-    std::vector<Task> result;
-    for (const auto &task : taskRepo) {
-        if (task.task_id == taskId) {
-            result.push_back(task);
+
+std::vector<Task> TaskManager::filterTasks(const Task& filter) {
+    std::vector<Task> filteredTasks;
+
+    for (const auto& task : taskRepo) {
+        bool matches =
+            (filter.priority == 0 || task.priority == filter.priority) &&
+            (filter.execution_time == 0 || task.execution_time == filter.execution_time) &&
+            (filter.description.empty() || task.description.find(filter.description) != std::string::npos) &&
+            (!filter.is_completed || task.is_completed == filter.is_completed) &&
+            (filter.task_id == 0 || task.task_id == filter.task_id);
+
+        if (matches) {
+            filteredTasks.push_back(task);
         }
     }
-    return result;
-}
 
+    return filteredTasks;
+}

@@ -49,6 +49,7 @@ int main(int argc, char* argv[]) {
         ("d,description", "Task description", cxxopts::value<std::string>())
         ("p,priority", "Priority", cxxopts::value<int>()->default_value("0"))
         ("t,execution", "Execution time", cxxopts::value<int>()->default_value("0"))
+        ("j,json", "Output in JSON format", cxxopts::value<bool>()->default_value("false"))
         ("h,help", "Print help");
 
     auto result = options.parse(argc, argv);
@@ -56,6 +57,7 @@ int main(int argc, char* argv[]) {
         printHelp();
         return 0;
     }
+    auto json_output = result["json"].as<bool>();
     auto config = loadConfig();
 
     std::string host = config.value("host", "127.0.0.1");
@@ -77,13 +79,24 @@ int main(int argc, char* argv[]) {
             std::cerr << COLOR_RED << "Missing required --description for add" << COLOR_RESET << "\n";
             return 1;
         }
-        req["command"] = "add";
+        req["command"] = cmd;
         req["description"] = result["description"].as<std::string>();
         req["execution_time"] = result["execution"].as<int>();
         if (result.count("priority"))
             req["priority"] = result["priority"].as<int>();
         else
-            req["priority"] = default_priority;        
+            req["priority"] = default_priority;         
+    } else if (cmd == "filter") {
+        req["command"] = cmd;
+
+        if (result.count("description"))
+            req["description"] = result["description"].as<std::string>();
+
+        if (result.count("execution"))
+            req["execution_time"] = result["execution"].as<int>();
+
+        if (result.count("priority"))
+            req["priority"] = result["priority"].as<int>();
     } else if (cmd == "done" || cmd == "remove") {
         if (argc < 3) {
             std::cerr << COLOR_RED << "Usage: taskctl " << cmd << " <task_id>" << COLOR_RESET << "\n";
@@ -121,9 +134,17 @@ int main(int argc, char* argv[]) {
                       << desc << "\n";
         }
     } else if (response["status"] == "ok") {
-        std::cout << COLOR_GREEN << response["message"] << COLOR_RESET << "\n";
+        if(json_output){
+            std::cout << response.dump(4) << "\n";
+        } else {
+            std::cout << COLOR_GREEN << "Success: " << response["message"] << COLOR_RESET << "\n";
+        }
     } else {
-        std::cerr << COLOR_RED << "[ERROR] " << response["message"] << COLOR_RESET << "\n";
+        if(json_output){
+            std::cout << response.dump(4) << "\n";
+        } else {
+            std::cout << COLOR_RED << "Error: " << response["message"] << COLOR_RESET << "\n";
+        }
     }
 
     return 0;

@@ -8,21 +8,6 @@ class TaskManager
 private:
     ITaskStorage &taskStorage;
     std::vector <Task> taskRepo;
-public:
-    TaskManager(ITaskStorage &ITaskStorage)
-    : taskStorage(ITaskStorage)
-    {
-        taskRepo = taskStorage.load();
-    }
-    void addTask(const Task &task){
-        taskRepo.push_back(task);
-        taskStorage.save(taskRepo);
-    }
-    void removeTask(int taskId);
-    void updateTask(int taskId, const Task &task);
-    Task getTask(int taskId);
-    std::vector<Task> getAllTasks();
-    void markTaskAsCompleted(int taskId);
     void setTaskPriority(int taskId, int priority);
     void setTaskExecutionTime(int taskId, int executionTime);
     void setTaskDescription(int taskId, const std::string &description);
@@ -31,7 +16,25 @@ public:
     std::vector<Task> getTasksByExecutionTime(int executionTime);
     std::vector<Task> getTasksByCompletionStatus(bool isCompleted);
     std::vector<Task> getTasksByDescription(const std::string &description);
-    std::vector<Task> getTasksById(int taskId);
+    public:
+    TaskManager(ITaskStorage &ITaskStorage)
+    : taskStorage(ITaskStorage)
+    {
+        taskRepo = taskStorage.load();
+    }
+    std::vector<Task> getAllTasks();
+    Task getTask(int taskId);
+    void removeTask(int taskId);
+    void markTaskAsCompleted(int taskId);
+    void updateTask(int taskId, const Task &task);
+    int addTask(Task &task){
+        task.task_id = taskRepo.empty() ? 1 : taskRepo.back().task_id + 1; 
+        taskRepo.push_back(task);
+        taskStorage.save(taskRepo);
+        return task.task_id;
+    }
+    std::vector<Task> filterTasks(const Task &filter);
+
     ~TaskManager(){
         taskStorage.save(taskRepo);
     }

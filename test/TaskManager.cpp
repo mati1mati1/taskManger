@@ -41,15 +41,20 @@ TEST_F(TaskManagerTest, AddAndRetrieveTasks) {
 }
 
 TEST_F(TaskManagerTest, RemoveTaskById) {
-    manager->addTask({1, 1, 10, "Remove me", false});
+    Task task1{1, 1, 10, "Remove me", false};
+    manager->addTask(task1);
     manager->removeTask(1);
     auto tasks = manager->getAllTasks();
     EXPECT_TRUE(tasks.empty());
 }
 
 TEST_F(TaskManagerTest, UpdateTaskById) {
-    manager->addTask({1, 1, 10, "Original", false});
-    manager->updateTask(1, {1, 1, 20, "Updated", true});
+    Task task{1, 1, 10, "Original", false};
+    manager->addTask(task);
+    task.description = "Updated";
+    task.execution_time = 20;
+    task.is_completed = true;
+    manager->updateTask(1, task);
 
     Task t = manager->getTask(1);
     EXPECT_EQ(t.description, "Updated");
@@ -58,7 +63,8 @@ TEST_F(TaskManagerTest, UpdateTaskById) {
 }
 
 TEST_F(TaskManagerTest, MarkTaskAsCompleted) {
-    manager->addTask({1, 1, 10, "Incomplete", false});
+    Task task{1, 1, 10, "Incomplete", false};
+    manager->addTask(task);
     manager->markTaskAsCompleted(1);
     EXPECT_TRUE(manager->getTask(1).is_completed);
 }
