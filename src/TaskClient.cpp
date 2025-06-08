@@ -6,9 +6,6 @@
 #include <iostream>
 
 #define BUFFER_SIZE 4096
-#define SERVER_PORT 5050
-
-TaskClient::TaskClient(const std::string& host) : serverHost(host) {}
 
 nlohmann::json TaskClient::sendRequest(const nlohmann::json& request) {
     int sock = socket(AF_INET, SOCK_STREAM, 0);  
@@ -19,7 +16,7 @@ nlohmann::json TaskClient::sendRequest(const nlohmann::json& request) {
 
     sockaddr_in addr{};
     addr.sin_family = AF_INET;
-    addr.sin_port = htons(SERVER_PORT);
+    addr.sin_port = htons(static_cast<uint16_t>(serverPort));  
     addr.sin_addr.s_addr = inet_addr(serverHost.c_str());  
 
     if (connect(sock, (struct sockaddr*)&addr, sizeof(addr)) < 0) {

@@ -13,6 +13,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nlohmann_json)
 
+# Fetch cxxopts
+FetchContent_Declare(
+  cxxopts
+  GIT_REPOSITORY https://github.com/jarro2783/cxxopts.git
+  GIT_TAG        v3.1.1  # latest stable as of 2025
+)
+FetchContent_MakeAvailable(cxxopts)
+
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY https://github.com/google/googletest.git
@@ -39,8 +47,11 @@ add_executable(taskctl
     src/TaskClient.cpp
 )
 
-target_link_libraries(taskctl PRIVATE nlohmann_json)
-
+target_link_libraries(taskctl
+    PRIVATE
+    nlohmann_json
+    cxxopts
+)
 # Tests
 add_executable(GTestTaskTests
     test/TaskManager.cpp
