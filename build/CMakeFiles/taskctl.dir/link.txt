@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/taskctl.dir/src/taskctl.cpp.o CMakeFiles/taskctl.dir/src/TaskClient.cpp.o -o taskctl
